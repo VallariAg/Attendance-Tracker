@@ -12,5 +12,32 @@
 
 }
 #next{
-     align-self: right;
+     float: right;
+     margin-right: 3%;
+
+}
+#previous{
+     float: left;
+     margin-left: 3%;
+}
+#stats{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     /* grid-template-rows: 50px 50px 50px 50px 50px 50px; */
+     grid-template-rows: auto auto auto auto auto auto;
+
+     justify-self: stretch;
+     /* text-align: center; */
+     margin-left: 20%;
+     margin-right: 20%;
+
+}
+.percent{
+     float:right;
+}
+#weekNum{
+     float: center;
+     /* margin-left: 7%; */
+     /* display: inline */
+
 }

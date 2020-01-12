@@ -60,7 +60,7 @@ for(var i=0; i<5; i++){
         var newNode = document.createElement('ul');
         newNode.className = 'day';
         newNode.innerHTML = days[j].toUpperCase(); j++;
-        console.log(newNode);
+        
         newNode.append(classes.forEach(element => {
             
             newNode.innerHTML += `<li class = "classes">  ${element}   </li>`;
@@ -183,7 +183,7 @@ function a(weekObj){
             stat[0] += attended;
             stat[1] += total;
             stat[2] = (stat[0]/stat[1])*100;
-            console.log(stat);
+            
         });
         db.ref(user + '/subjects/' + classClick).set(stat);
         
@@ -193,12 +193,22 @@ function a(weekObj){
 
 db.ref(user + '/subjects' ).on('value', (snapshot) => {
     var subStat = snapshot.val();
-    console.log(subStat);
+    
     var displayArea = document.getElementById('stats');
-    console.log(displayArea);
-    for(var i=1; i<13; i+2){
-        console.log(displayArea.childNodes[i]);
+    
+    var j=0;
+    for(var i=1; i<24; ){
+    
+        var arrayStat = Object.values(subStat)[j];
+        var classCurrent = Object.keys(subStat)[j];
+        
+        var li = displayArea.childNodes[i];
+        li.innerHTML = ` ${classCurrent.toUpperCase()} :   ${arrayStat[0]} / ${arrayStat[1]}   <b class = "percent"> ${arrayStat[2]} %</b>`;
+        i += 2; j++;
     }
+    
+
+
 });
 
 

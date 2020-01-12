@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Attenance Tracker</title>
    <link href="style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    <h4 id="weekNum"> </h4>
-    <div id="tt"></div>
-    <button id="previous" onclick="previousWeekClick()">Previous</button>
-    <button id="next" onclick="nextWeekClick()">Next</button>
 
-    <div id="stats">
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
-        <li class="statSub"></li>
+    <div class= "jumbotron">
+      <h1 class="display-4">Attenance Tracker</h1>
+      <h4 id="weekNum"> </h4>
+      <figure id="tt" class="card-body shadow p-3 mb-5 bg-white rounded text-break"></figure>
+    
+
+       <div>
+         <button id="previous" onclick="previousWeekClick()" type="button" class="btn btn-dark"> Previous Week </button>
+         <button id="next" onclick="nextWeekClick()" type="button" class="btn btn-dark"> Next Week </button>
+    </div>
+    </div>
+
+    <div id="stats" class="list-group list-group-flush">
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
+        <li class="statSub list-group-item"></li>
       </div>
-
+      
 
 
 
