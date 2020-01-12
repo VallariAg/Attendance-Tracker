@@ -1,0 +1,16 @@
+.day {
+    /* tab-size: 4;
+     */
+     display: flex;
+     flex-direction: row;
+     
+     /* margin-left: 40px; */
+     /* grid-column: auto; */
+}
+.classes{
+     margin-left: 40px;
+
+}
+#next{
+     align-self: right;
+}
