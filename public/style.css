@@ -41,3 +41,36 @@
      /* display: inline */
 
 }
+.ratio{
+     color:grey
+}
+
+.rules{
+     display: grid;
+     float: center;
+     margin-left: 20%;
+     grid-template-columns: 30% 30% 30%;
+}
+.foot{
+     /* display: inline; */
+     float: center;
+     
+     margin-top:1%;
+     margin-bottom: 1%;
+     margin-left: 7%;
+     /* background-color: rgb(190, 182, 182); */
+}
+#userName{
+     float: right;
+     margin-right: 5%;
+}
+footer{
+     display: absolute;
+     margin-bottom: 0%;
+}
+.sign-in{
+     /* float: flex; */
+     /* align-content: center; */
+     /* align-items: center; */
+     margin: auto 30% 30% 30%;
+}

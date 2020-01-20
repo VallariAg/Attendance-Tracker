@@ -6,6 +6,7 @@
     <title>Welcome to Attenance Tracker</title>
    <link href="style.css" rel="stylesheet">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
 
@@ -13,8 +14,12 @@
       <h1 class="display-4">Attenance Tracker</h1>
       <h4 id="weekNum"> </h4>
       <figure id="tt" class="card-body shadow p-3 mb-5 bg-white rounded overflow-auto"></figure>
-    
-
+      <div class = "rules">
+        <li style="color: green;">Present</li>
+        <li style="color:red;">Absent</li>
+        <li style="color:grey">No-class</li>
+      </div>
+<br>
        <div>
          <button id="previous" onclick="previousWeekClick()" type="button" class="btn btn-dark"> Previous Week </button>
          <button id="next" onclick="nextWeekClick()" type="button" class="btn btn-dark"> Next Week </button>
@@ -35,8 +40,17 @@
         <li class="statSub list-group-item"></li>
         <li class="statSub list-group-item"></li>
       </div>
-      
-
+      <hr>
+<footer >
+  <form class="foot">
+    User name:  
+    <input name="user" type="text" id="input"  placeholder="your name"> 
+    <button class="btn btn-outline-dark" id="okay" type="button">Ok</button>
+    <button class="btn btn-outline-dark" id="signout" type="button" onclick="signoutClick()">Sign-out</button>
+    
+    <label name="userName" id="userName">    </label>
+  </form>
+</footer>
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -53,7 +67,10 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase.js"></script>
 
 
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
+<script nomodule src="sign.js"></script>
+
+
 
 
 

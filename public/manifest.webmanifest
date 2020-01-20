@@ -1,0 +1,21 @@
+{
+    "name": "Attendance Tracker",
+    "short_name": "Attendance",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "An app to track class attandance.",
+    "icons":[
+        {
+            "src":"a.jpg",
+            "size": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src":"a.jpg",
+            "size": "192x192",
+            "type": "image/png"
+        }
+    ]
+
+}

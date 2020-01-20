@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Attenance Tracker</title>
+   <link href="style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  </head>
+  <body style="background-color:#E8ECEF;">
+        <h1 class="display-4">Attenance Tracker</h1>
+
+    <div class= "sign-in" id="log">
+      <figure id="tt" class="card-body shadow p-3 mb-5 bg-white rounded overflow-auto">
+        
+
+      </figure>
+      <button onclick="signin()"> Sign-in </button>
+      <button onclick="signout()"> Sign-out </button>
+
+    </div>
+
+<footer >
+  <form class="foot">
+    
+    <label name="userName" id="userName"></label>
+  </form>
+</footer>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<script src="sign.js"></script>
+
+
+
+
+
+  </body>
+</html>

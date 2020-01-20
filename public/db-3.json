@@ -1,0 +1,699 @@
+{
+	"2jVf2ZPwWyTw29NR4JUgOyJYGN43":{
+		"subjects":{
+			"cs":[	0,	0,	0],
+			"ed":[	0,	0,	0],
+			"ed-lab":[	0,	0,	0],
+			"em":[	0,	0,	0],
+			"evs":[	0,	0,	0],
+			"evs-lab":[	0,	0,	0],
+			"ip":[	0,	0,	0],
+			"ip-lab":[	0,	0,	0],
+			"maths":[	0,	0,	0],
+			"physics":[	0,	0,	0],
+			"physics-lab":[	0,	0,	0],
+			"workshop":[	0,	0,	0]
+		},
+		"tt":{
+			"friday":[	"evs",	"ip",	"cs",	"maths",	"physics",	"em"],
+			"monday":[	"ed",	"ip",	"evs",	"ed-lab"],
+			"thurday":[	"physics",	"ed",	"evs",	"cs",	"maths",	"em",	"ip",	"maths"],
+			"tuesday":[	"workshop",	"evs-lab",	"maths",	"ip-lab"],
+			"wednesday":[	"cs",	"physics",	"em",	"physics-lab",	"ed"]
+		},
+		"weeks":[
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			},
+			{
+				"friday":[	0,	0,	0,	0,	0,	0],
+				"monday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0,	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0,	0]
+			}
+		]
+	},
+	"khushi":{
+		"subjects":{
+			"physics":[	0,	0,	0],
+			"maths":[	0,	0,	0],
+			"e-science":[	0,	0,	0],
+			"sdf":[	0,	0,	0],
+			"worksheet":[	0,	0,	0],
+			"physics-lab":[	0,	0,	0],
+			"sdf-lab":[	0,	0,	0],
+			"e-science-lab":[	0,	0,	0]
+		},
+		"tt":{
+			"monday":[	"maths",	"sdf",	"physics",	"maths"],
+			"tuesday":[	"e-science",	"e-science",	"physics",	"sdf"],
+			"wednesday":[	"workshop",	"e-science",	"sdf",	"sdf-lab"],
+			"thurday":[	"physics",	"maths",	"e-science-lab",	"sdf"],
+			"friday":[	"e-science",	"physics-lab",	"maths",	"physics"]
+		},
+		"weeks":[
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			},
+			{
+				"monday":[	0,	0,	0,	0],
+				"tuesday":[	0,	0,	0,	0],
+				"wednesday":[	0,	0,	0,	0],
+				"thurday":[	0,	0,	0,	0],
+				"friday":[	0,	0,	0,	0]
+			}
+		]
+	}
+}

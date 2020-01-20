@@ -1,3 +1,5 @@
+// import {signout} from './sign';
+// export log ;
  // Your web app's Firebase configuration
  const firebaseConfig = {
     apiKey: "AIzaSyDV0ZW5jXipi2VVX_7IxEzcsYTymAJ1PrQ",
@@ -13,11 +15,20 @@
   firebase.initializeApp(firebaseConfig);
 //   firebase.analytics();
 
-
 var db = firebase.database();
 
-
-var user = "vallari";
+async function users(){
+    let {takeUser} = await import('./sign');
+    takeUser(user);
+    console.log("hello");
+    if(name==""){
+    // window.location.href = "sign-in.html";
+console.log("nonon");
+    }
+} 
+users();
+var user = name;
+// var log = 1;
 var currentWeek = 0;
 
 
@@ -33,6 +44,23 @@ function nextWeekClick(){
     if(currentWeek == 51) return;
     currentWeek ++;
     mark();
+}
+var button =document.getElementById('okay');
+button.addEventListener('click',() => {
+    var input = document.getElementById('input');
+    user = input.value;
+    // location.reload();
+    // document.getElementById('userName').innerHTML = `Hello, ${user} !`;
+    
+});
+
+//listen for var user changes
+// var observeUser = { o: user };
+// observeUser.watch('o',() => {
+//     console.log("change everything");
+// });
+if(user!=""){
+    document.getElementById('userName').innerHTML = `Hello, ${user} !`;
 }
     // nextWeek.addEventListener('click', () => {
     //     currentWeek ++;
@@ -55,6 +83,7 @@ for(var i=0; i<5; i++){
     db.ref(user + '/tt/' + days[i]).on('value', (snapshot) => { 
             
         var tt = document.getElementById('tt');
+
         var classes = snapshot.val();
         
         var newNode = document.createElement('ul');
@@ -155,7 +184,7 @@ function a(weekObj){
             var child = e.target;
             while( (child = child.previousSibling) != null )   i++;
             i--;
-            total++;
+            attended --;
 
         }
         else if(e.target.style.color == "red"){
@@ -168,6 +197,7 @@ function a(weekObj){
             while( (child = child.previousSibling) != null )   i++;
             i--;
             total --;
+            // console.log(total);
 
         }
         db.ref(user + '/weeks/' + currentWeek ).on('value', (snapshot) => {
@@ -182,7 +212,8 @@ function a(weekObj){
             // console.log(stat);
             stat[0] += attended;
             stat[1] += total;
-            stat[2] = (stat[0]/stat[1])*100;
+            stat[2] = Math.round((stat[0]/stat[1])*100);
+            
             
         });
         db.ref(user + '/subjects/' + classClick).set(stat);
@@ -190,6 +221,7 @@ function a(weekObj){
     });    
 
 // display subject stats
+
 
 db.ref(user + '/subjects' ).on('value', (snapshot) => {
     var subStat = snapshot.val();
@@ -211,4 +243,32 @@ db.ref(user + '/subjects' ).on('value', (snapshot) => {
 
 });
 
+var signoutButton = document.getElementById('signout');
 
+signoutButton.addEventListener('click',() => {
+    // export function logCheck(){ log=0; }
+    signout();
+    window.location.href = "sign-in.html";
+
+});
+
+
+function signout(){
+    firebase.auth().signOut().then(function() {
+        // Sign-out successful. 
+        console.log("logged out");
+
+      }).catch(function(error) {
+        // An error happened.
+        console.log("cant log out")
+
+      });
+      
+}
+// function signoutClick(){
+//     // console.log("sign out clicked");
+//     // let {signout} = await import('./sign');
+//     signout();
+//     window.location.href = "sign-in.html";
+    
+// }
