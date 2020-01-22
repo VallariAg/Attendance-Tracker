@@ -1,4 +1,4 @@
-// import {takeUser} from './sign';                                    //this import
+// import {takeUser} from './sign.js';                                    //this import
  // Your web app's Firebase configuration
  const firebaseConfig = {
     apiKey: "AIzaSyDV0ZW5jXipi2VVX_7IxEzcsYTymAJ1PrQ",
@@ -11,21 +11,62 @@
     measurementId: "G-P9WEQNL3YK"
   };
 //   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 //   firebase.analytics();
 
 var db = firebase.database();
 
-var user;
-function users(){
-    
-    user = takeUser();
-    console.log("hello");
-    if(user==""){
-    console.log("nonon");
+var user, userName, userPhotoURL;
+// var cookies = browser.cookies.get({
+    // name: "user"
+// });
+var cookies = document.cookie;
+cookies = cookies.split(';');
+var i =0;
+while(cookies[i]){
+    console.log(cookies);
+    if((cookies[i].split('=')[0].trim()) == 'user'){
+      user = cookies[i].split('=')[1];   
     }
-} 
-users();
+    if((cookies[i].split('=')[0]).trim() == 'userName'){
+        userName = decodeURIComponent(cookies[i].split('=')[1]);  
+    }
+    if((cookies[i].split('=')[0]).trim() == 'userImg'){
+        userPhotoURL = decodeURIComponent(cookies[i].split('=')[1]); 
+        console.log(userPhotoURL);
+    }
+    i++;
+}
+
+var head = document.querySelector('.heading');
+head.innerHTML += `<img src=${userPhotoURL} alt="display picture here" class="userPhoto">` ; 
+// cookies = cookies[0].split('=')[1];
+// user = cookies;
+
+// function userIs(){
+//     firebase.auth().getRedirectResult().then(function(result) {
+//         if (result.credential) {
+//           // This gives you a Google Access Token. You can use it to access the Google API.
+//           var token = result.credential.accessToken;
+//           // ...
+//         }
+//         // The signed-in user info.
+//         user = result.user;
+
+//       });
+// }
+
+// function users(){
+//     // var auth = firebase.auth();
+//     // console.log(auth.currentUser);
+//     // user = takeUser;
+//     // user = takeUser();
+
+//     if(user==""){
+//     console.log(user);
+//     }
+// } 
+// users();
 
 var currentWeek = 0;
 
@@ -44,14 +85,14 @@ function nextWeekClick(){
     currentWeek ++;
     mark();
 }
-var button =document.getElementById('okay');
-button.addEventListener('click',() => {
-    var input = document.getElementById('input');
-    user = input.value;
+// var button =document.getElementById('okay');
+// button.addEventListener('click',() => {
+    // var input = document.getElementById('input');
+    // user = input.value;
     // location.reload();
     // document.getElementById('userName').innerHTML = `Hello, ${user} !`;
     
-});
+// });
 
 //listen for var user changes
 // var observeUser = { o: user };
@@ -59,7 +100,7 @@ button.addEventListener('click',() => {
 //     console.log("change everything");
 // });
 if(user!=""){
-    document.getElementById('userName').innerHTML = `Hello, ${user} !`;
+    document.getElementById('userName').innerHTML += `Hello, ${userName} !`;
 }
     
 
@@ -241,7 +282,7 @@ var signoutButton = document.getElementById('signout');
 signoutButton.addEventListener('click',() => {
     // export function logCheck(){ log=0; }
     signout();
-    window.location.href = "sign-in.html";
+    window.location.href = "index.html";
 
 });
 
@@ -250,6 +291,10 @@ function signout(){
     firebase.auth().signOut().then(function() {
         // Sign-out successful. 
         console.log("logged out");
+        // var now = new Date();
+        // now.setMonth( now.getMonth() - 1 );
+        // document.cookie = "expires=" + now.toUTCString() + ";";
+
 
       }).catch(function(error) {
         // An error happened.
