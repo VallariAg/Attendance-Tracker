@@ -1,5 +1,4 @@
-// import {signout} from './sign';
-// export log ;
+// import {takeUser} from './sign';                                    //this import
  // Your web app's Firebase configuration
  const firebaseConfig = {
     apiKey: "AIzaSyDV0ZW5jXipi2VVX_7IxEzcsYTymAJ1PrQ",
@@ -17,19 +16,19 @@
 
 var db = firebase.database();
 
-async function users(){
-    let {takeUser} = await import('./sign');
-    takeUser(user);
+var user;
+function users(){
+    
+    user = takeUser();
     console.log("hello");
-    if(name==""){
-    // window.location.href = "sign-in.html";
-console.log("nonon");
+    if(user==""){
+    console.log("nonon");
     }
 } 
 users();
-var user = name;
-// var log = 1;
+
 var currentWeek = 0;
+
 
 
 var nextWeek = document.getElementById('next');
@@ -62,13 +61,7 @@ button.addEventListener('click',() => {
 if(user!=""){
     document.getElementById('userName').innerHTML = `Hello, ${user} !`;
 }
-    // nextWeek.addEventListener('click', () => {
-    //     currentWeek ++;
-    // });
-
-    // previousWeek.addEventListener('click', () => {
-    //     currentWeek --;
-    // });
+    
 
 
 //print timetable

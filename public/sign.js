@@ -1,4 +1,4 @@
-//  export default {takeUser};
+
  // Your web app's Firebase configuration
  const firebaseConfig = {
     apiKey: "AIzaSyDV0ZW5jXipi2VVX_7IxEzcsYTymAJ1PrQ",
@@ -14,9 +14,6 @@
   firebase.initializeApp(firebaseConfig);
   var db = firebase.database(); 
 
-//   firebase.analytics();
-
-// var userName, userId;
 
 function signin(){
 
@@ -27,11 +24,6 @@ firebase.auth().signInWithRedirect(provider);
 }
 
 
-// firebase.auth().getRedirectResult().then((res) => {
-//     console.log(res.user.displayName);
-//     // export var userName = (res.user.displayName);
-
-// });
 
 firebase.auth().onAuthStateChanged(function(user) {
     var log = document.getElementById('tt');
@@ -54,12 +46,9 @@ firebase.auth().onAuthStateChanged(function(user) {
                   //sign them in
       
                   exist = 1;
-                  var userName = user.displayName;
-                //   export class takeUser{
-                //         constructor(name){
-                //          name = userName;
-                //         }
-                //       };
+                  // export function takeUser(){                           //this export
+                  //        return userId; 
+                  //     }
                   window.location.href = "index.html";
 
               }
@@ -77,13 +66,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   }) ; 
 
 
-
-    //   export function takeUser(){
-    //       var name = user.displayName;
-    //   }
-
-    //   export var userName = user.displayName;
-     
 
 
     } else {
