@@ -1,8 +1,8 @@
-# Attendence Tracker
+# Attendance Tracker
 
-A website made to keep a record of classes attended every week and track attendence percentage %  for each subject. 
+A website made to keep a record of classes attended every week and track attendance percentage %  for each subject. 
 
-![](https://i.imgur.com/r1HKG72.png)
+![](https://i.imgur.com/OTgVE2i.png)
 
 
 ## Getting Started
@@ -12,6 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Make sure `JavaScript` is enabled in your browser. To enable it, follow [these](https://www.enable-javascript.com/) instructions. 
+
 Install `Firebase` command line from [here](https://firebase.google.com/docs/cli#install_the_firebase_cli).
 
 
