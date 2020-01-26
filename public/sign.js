@@ -15,7 +15,7 @@
   var db = firebase.database(); 
 
 
-function signin(){
+function signinGoogle(){
 
 var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -24,8 +24,22 @@ firebase.auth().signInWithRedirect(provider);
 }
 // var signinButton = document.getElementById('signin');
 // signinButton.addEventListener('click',signin());
+var email, password;
 
+function signin(){
+   email = document.getElementById('mail').value;
+   password = document.getElementById('password').value;
+  console.log(email)
+  console.log(password)
 
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorMessage);
+      // ...
+    });
+}
 var userId,userImg,userName;
 
 firebase.auth().onAuthStateChanged(function(user) {
@@ -64,7 +78,8 @@ firebase.auth().onAuthStateChanged(function(user) {
               // create account
               console.log('v')
               log.innerHTML += `<hr> <h4> Seems like you don't have an account! </h4>
-                                <button>Create an account!</button>`;
+                                <button>Create an account!</button>
+                                <hr> or`;
 
           }
 
@@ -76,7 +91,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     } else {
       // No user is signed in.
-      tt.innerHTML = "Join us, NOW!";
+      var into = document.getElementById('intro');
+      intro.innerHTML = "Join us, NOW!";
       var a = document.getElementById('userName');
       a.innerHTML = "no user here";
       var now = new Date();
@@ -86,18 +102,18 @@ firebase.auth().onAuthStateChanged(function(user) {
   });
 
 
-function signout(){
-    firebase.auth().signOut().then(function() {
-        // Sign-out successful. 
-        console.log("logged out");
-        // var now = new Date();
-        // now.setMonth( now.getMonth() - 1 );
-        // document.cookie = "expires=" + now.toUTCString() + ";";
+// function signout(){
+//     firebase.auth().signOut().then(function() {
+//         // Sign-out successful. 
+//         console.log("logged out");
+//         // var now = new Date();
+//         // now.setMonth( now.getMonth() - 1 );
+//         // document.cookie = "expires=" + now.toUTCString() + ";";
 
-      }).catch(function(error) {
-        // An error happened.
-        console.log("cant log out")
+//       }).catch(function(error) {
+//         // An error happened.
+//         console.log("cant log out")
 
-      });
+//       });
       
-}
+// }

@@ -75,10 +75,10 @@ footer{
      /* float: flex; */
      /* align-content: center; */
      /* align-items: center; */
-     margin: auto 30% 30% 30%;
+     margin: 5% 10% auto 10%;
 }
 .head{
-     display: fixed;
+     display: absolute;
      /* flex-direction: row;
      justify-content: center;
      align-items: center; */
@@ -99,3 +99,16 @@ footer{
      border-radius: 50%;
      margin-right:5%;
 }
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+     .sign-in{
+          /* float: flex; */
+          /* align-content: center; */
+          /* align-items: center; */
+          margin: 5% 30% auto 30%;
+     }
+ }

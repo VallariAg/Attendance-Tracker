@@ -22,20 +22,21 @@ var user, userName, userPhotoURL;
 // });
 var cookies = document.cookie;
 cookies = cookies.split(';');
-var i =0;
-while(cookies[i]){
-    console.log(cookies);
-    if((cookies[i].split('=')[0].trim()) == 'user'){
-      user = cookies[i].split('=')[1];   
+var k =0;
+while(cookies[k]){
+    
+    if((cookies[k].split('=')[0].trim()) == 'user'){
+      user = cookies[k].split('=')[1];   
     }
-    if((cookies[i].split('=')[0]).trim() == 'userName'){
-        userName = decodeURIComponent(cookies[i].split('=')[1]);  
+    if((cookies[k].split('=')[0]).trim() == 'userName'){
+        userName = decodeURIComponent(cookies[k].split('=')[1]); 
+        if(userName == 'null'){ userName = "there"; }
     }
-    if((cookies[i].split('=')[0]).trim() == 'userImg'){
-        userPhotoURL = decodeURIComponent(cookies[i].split('=')[1]); 
-        console.log(userPhotoURL);
+    if((cookies[k].split('=')[0]).trim() == 'userImg'){
+        userPhotoURL = decodeURIComponent(cookies[k].split('=')[1]); 
+        if(userPhotoURL == 'null'){ userPhotoURL = 'a.jpg' }
     }
-    i++;
+    k++;
 }
 
 var head = document.querySelector('.heading');
@@ -193,7 +194,8 @@ function a(weekObj){
 
     var tt = document.getElementById('tt')
     tt.addEventListener('click', (e) =>{
-        var classClick = e.target.innerText, attended = 0, total = 0, stat;
+        var classClick = e.target.innerText;
+        var attended = 0, total = 0, stat;
         
         var dayClicked, i= 0, newValue = 0, binary ; 
         if(e.target.style.color == "grey"){
@@ -230,47 +232,62 @@ function a(weekObj){
             var child = e.target;
             while( (child = child.previousSibling) != null )   i++;
             i--;
-            total --;
+            total--;
+            
             // console.log(total);
 
         }
-        db.ref(user + '/weeks/' + currentWeek ).on('value', (snapshot) => {
+        db.ref(user + '/weeks/' + currentWeek ).once('value', (snapshot) => {
             var weekObj = snapshot.val();
             binary = weekObj[dayClicked];
             binary[i] = newValue;
         });
         
         db.ref(user + '/weeks/' + currentWeek + '/' + dayClicked ).set(binary);
-        db.ref(user + '/subjects/' + classClick ).on('value', (snapshot) => {
+        db.ref(user + '/subjects/' + classClick ).once('value', (snapshot) => {
             stat = snapshot.val();
-            // console.log(stat);
-            stat[0] += attended;
-            stat[1] += total;
-            stat[2] = Math.round((stat[0]/stat[1])*100);
             
+
+                stat[0] += attended;
+                stat[1] += total;
+                
+                if((stat[1]==0)&&(stat[0]==0)){ stat[2] = 0; }
+                else {stat[2] = Math.round((stat[0]/stat[1])*100);}
+               
             
         });
-        db.ref(user + '/subjects/' + classClick).set(stat);
+
+
+        db.ref(user + '/subjects/' + classClick ).set(stat);
         
     });    
 
 // display subject stats
 
-
+var run = 0;
 db.ref(user + '/subjects' ).on('value', (snapshot) => {
+
+    var displayArea = document.getElementById('stats');    
     var subStat = snapshot.val();
+    var len = Object.keys(subStat).length;
+    // console.log(subStat);
     
-    var displayArea = document.getElementById('stats');
+    if(run==0){
+        for(var j=0;j<len;j++){
+
+            displayArea.innerHTML += `<li class="statSub list-group-item"></li>`;
+        }
+        run++;
+    }
     
-    var j=0;
-    for(var i=1; i<24; ){
+    for(var j=0; j<len; j++){
     
         var arrayStat = Object.values(subStat)[j];
         var classCurrent = Object.keys(subStat)[j];
         
-        var li = displayArea.childNodes[i];
+        var li = displayArea.childNodes[j];
         li.innerHTML = ` ${classCurrent.toUpperCase()} :   ${arrayStat[0]} / ${arrayStat[1]}   <b class = "percent"> ${arrayStat[2]} %</b>`;
-        i += 2; j++;
+        
     }
     
 
@@ -278,7 +295,6 @@ db.ref(user + '/subjects' ).on('value', (snapshot) => {
 });
 
 var signoutButton = document.getElementById('signout');
-
 signoutButton.addEventListener('click',() => {
     // export function logCheck(){ log=0; }
     signout();
